@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navigation (optional) -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <!-- Add navigation links if you want -->
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- About Me Section -->
+    <section class="about-section">
+      <div class="image-container">
+        <!-- Replace 'profile.jpg' with your own image file -->
+        <img src="images/profile.jpg" alt="Profile Photo" class="profile-image" />
+      </div>
+      <div class="text-container">
+        <h2>About Me</h2>
+        <p>
+          My Name is Maxim Moltmann and I am a current student at Georgia State.
+          This portfolio is dedicated to showcase my life, including hobbies, thoughts
+          and experiences.
+        </p>
+        <p>
+          I am a computer science student, this website was programmed by me, and will grow with time.
+          It is still in the development phase but will grow and expand as time passes 
+        </p>
+      </div>
+    </section>
+
+    <!-- Tabs Section: Skills, Experience, Education -->
+    <section class="tabs-section">
+      <div class="tabs">
+        <button class="tab-button active" data-tab="skills">Skills</button>
+        <button class="tab-button" data-tab="experience">Experience</button>
+        <button class="tab-button" data-tab="education">Education</button>
+      </div>
+
+      <div class="tab-content">
+        <!-- Skills Content -->
+        <div id="skills" class="tab-panel active">
+          <ul>
+            <li>Python - advanced </li>
+            <li>Front-End Development (css, html)</li>
+            <li>basic java script</li>
+            <li>C - beginner</li>
+            
+          </ul>
+        </div>
+
+        <!-- Experience Content -->
+        <div id="experience" class="tab-panel">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3></h3>
+              <p></p>
+            </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Content -->
+        <div id="education" class="tab-panel">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>2021 - 2023</h3>
+              <p>Atlanta International School</p>
+            </div>
+            <div class="timeline-item">
+              <h3>2023 - Present</h3>
+              <p>BSc in Computer Science</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (optional) -->
+  <footer>
+    <p>&copy; 2025 Maxim Moltmann.</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

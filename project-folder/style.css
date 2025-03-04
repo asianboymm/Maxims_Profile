@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1c1c1c;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  /* Main Layout */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  
+  .image-container {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-image {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  
+  .text-container {
+    flex: 2 1 400px;
+  }
+  
+  .text-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .text-container p {
+    margin-bottom: 1rem;
+    color: #cccccc;
+  }
+  
+  /* Tabs Section */
+  .tabs-section {
+    margin-bottom: 3rem;
+  }
+  
+  /* Tab Buttons */
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tab-button {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tab-button:hover {
+    background-color: #333333;
+  }
+  
+  .tab-button.active {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Tab Panels */
+  .tab-content {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 6px;
+  }
+  
+  .tab-panel {
+    display: none; /* hidden by default */
+  }
+  
+  .tab-panel.active {
+    display: block; /* show the active tab */
+  }
+  
+  /* Timeline */
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .timeline-item {
+    background-color: #2a2a2a;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  .timeline-item h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  .timeline-item p {
+    color: #cccccc;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #1c1c1c;
+  }
+  
+  footer p {
+    color: #888888;
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .image-container, .text-container {
+      flex: 1 1 auto;
+    }
+  
+    .tabs {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
